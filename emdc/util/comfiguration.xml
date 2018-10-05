@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<emdc>
+	<server class = "com.briup.emdc.server.ServerImpl">
+		<port >8099</port>
+		<backup> src/serverBack </backup>
+	</server>
+	<dbstore class = "com.briup.emdc.server.DBStoreImpl">
+		<driver>oracle.jdbc.driver.OracleDriver</driver>
+		<url>jdbc:oracle:thin:@localhost:1521:XE</url>
+		<username>briup</username>
+		<password>oracle</password>
+		<batch-size>500</batch-size>
+	</dbstore>
+	
+	<client class="com.briup.emdc.client.ClientImpl">
+		<ip>127.0.0.1</ip>
+		<port>8099</port>
+		<backup>src/clientBack</backup>		
+	</client>
+	
+	<gather class= "com.briup.emdc.client.GatherImpl">
+		<src-file>src/radwtmp</src-file>
+		<recored-file>src/record</recored-file>
+	</gather>
+	
+	<log class ="com.briup.emdc.util.LoggerImpl">
+		<log-file>src/log4j.properties</log-file>
+	</log>
+	<backup class ="com.briup.emdc.util.BackUpImpl">
+		<backup-file>src/backup.txt</backup-file>
+	</backup>	
+</emdc>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
