@@ -1,0 +1,75 @@
+.grid {
+    height: 470px;
+   /* background-color: pink;*/
+}
+.grid ul {
+    padding: 20px 0;
+}
+.grid ul li {
+    padding-left: 12px;
+    height: 29px;
+    line-height: 29px;
+}
+.grid ul li:hover {
+    background-color: #f0f3ef;
+}
+.grid li a:hover {
+    color: #f10215;
+}
+.grid-col1 {
+    width: 190px;
+    height: 100%;
+    background-color: #fefefe;
+    color: #626262;       /*反斜杠的样式*/
+    font-size: 14px;
+}
+.grid-col1 a {
+    color: #626262;
+    font-size: 14px;
+    margin: 0 3px;
+}
+.grid-col2  {
+    width: 590px;
+    height: 100%;
+    /*background-color: blue;*/
+    margin-left: 10px;
+    float: left;
+    position: relative;
+}
+.arrow-l,
+.arrow-r {
+    width: 30px;
+    height: 30px;
+   background: rgba(0,0,0,.3);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.arrow-r {
+    right: 0;
+}
+.circle {
+    width: 175px;
+    height: 10px;
+   /* background:!* rgba(255,255,255,.4);*!*/
+    background-color: yellow;
+    position: absolute;
+    left: 50%;
+}
+.grid-col3 {
+    width: 200px;
+    height: 100%;
+    /*background-color: green;*/
+}
+.grid-col3 img {
+    display: block;
+    padding-left: 5px;
+}
+.grid-col3 .grid-son {
+    padding: 10px 0 10px 0;
+}
+.grid-col4 {
+    width: 190px;
+    height: 80%;
+    background-color: yellow;
+}
